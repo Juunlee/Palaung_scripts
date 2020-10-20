@@ -45,7 +45,8 @@ import csv
 
 x = part.distances
 taxa = part.taxa
-with open(Dataset().cldf_dir._path('../output/distmat_'+method+'.csv').resolve(), 'w',encoding = 'utf-8') as f:
+filepath = Dataset().cldf_dir._path('../output/distmat_'+method+'.csv').resolve()
+with open(filepath, 'w',encoding = 'utf-8', new line= '') as f:
     writer = csv.writer(f)
     header_row = ['Language']
     header_row.extend(taxa)
