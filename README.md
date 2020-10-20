@@ -17,6 +17,7 @@ Tutorial
  This will create a folder that includes the python files needed for automatic phylogeny.
 
 (2)Running the scripts 
+
  6. Navigate into the <Palaung\_scripts/> directory by typing the following command:<cd Palaung\_scripts>.
  Now type in the following command to execute the cognate detection script: <python cognate\_detection.py>. 
  When the program starts running, it will require readers to choose which algorithm to use to do automated cognate detection. 
@@ -38,6 +39,7 @@ Tutorial
  Note that this number would be greater than the number given by the tree display in step 8.
  
 (3)Editing orthography.tsv and remaking the CLDF
+
  11. By editing the <orthography.tsv>, users can divide words into different partial segments. 
  In the first column of the <orthography.tsv> , users input the letters that will be changed. 
  Then, using tab, users can write down the change they want to make in the second column.
