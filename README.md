@@ -74,5 +74,6 @@ Tutorial
  This will recreate the file <cldf/forms.csv> in <deepadungpalaung/> and when you rerun <cognate\_detection.py> and steps 6-10 again, it will create a different result.
  
  (4)Adapting the script to other Lexibank datasets
+ 
  18. The script can also be used to analyze any of several other datasets from Lexibank. To find such a dataset, browse <https://github.com/lexibank/><github.com/lexibank/> and change the first line of <Palaung\_scripts/cognate\_detection.py}> from <from lexibank\_deepadungpalaung import Dataset>  to e.g. <from lexibank\_chindialectsurvey import Dataset>.
  Now if users have also followed steps 3 and 4 with <deepadungpalaung> replaced by e.g. <chindialectsurvey>, it will construct a phylogenetic tree of Chin dialects.
