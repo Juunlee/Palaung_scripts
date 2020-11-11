@@ -1,4 +1,6 @@
-# Tutorial 
+# Tutorial
+ 
+This tutorial covers how to use the scripts in this repository on the dataset found at <https://github.com/lexibank/deepadungpalaung>, which is based on [Deepadung et al., 2015](http://www.sealang.net/mks/mks44sujaritlak.pdf) 
 
 ## Cloning and installing the repositories 
  1. Readers should make sure to have Python 3 and git installed on the computer.
