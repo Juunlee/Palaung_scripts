@@ -1,6 +1,6 @@
 Tutorial 
 
-(1)Cloning and installing the repositories 
+##1 Cloning and installing the repositories 
  1. Readers should make sure to have Python 3 and git installed on the computer.
   If so, open a git-enabled Terminal window or command line.
   
@@ -10,7 +10,10 @@ Tutorial
  <Scripts\ activate> on a standard Windows command line, or <source Scripts/activate> on Windows using git bash.
  More information can be found at <https://docs.python.org/3/library/venv.html>.
  
- 3. Once the virtual environment is created, type or paste the following command: <git clone https://github.com/lexibank/deepadungpalaung.git.>
+ 3. Once the virtual environment is created, type or paste the following command: 
+ 
+ 		git clone https://github.com/lexibank/deepadungpalaung.git
+ 
  This will create a directory named <deepadungpalaung/> in the current working directory containing a copy of the repository.
  
  4. Next, type the following command: <pip install -e deepadungpalaung>
@@ -19,7 +22,7 @@ Tutorial
  5. After all the preparation is done,type or paste the following command:<git clone https://github.com/Juunlee/Palaung\_scripts.git>
  This will create a folder that includes the python files needed for automatic phylogeny.
 
-(2)Running the scripts 
+##2 Running the scripts 
 
  6. Navigate into the <Palaung\_scripts/> directory by typing the following command:<cd Palaung\_scripts>.
  Now type in the following command to execute the cognate detection script: <python cognate\_detection.py>. 
@@ -43,7 +46,7 @@ Tutorial
  can then be opened in a web browser to see internal nodes decorated with the average distance between the two groups joined. 
  Note that this number would be greater than the number given by the tree display in step 8.
  
-(3)Editing orthography.tsv and remaking the CLDF
+##3 Editing orthography.tsv and remaking the CLDF
 
  11. Type or paste the following command lines: <cldfbench catconfig> and <cldfbench lexibank.makecldf deepadungpalaung>
  This will recreate the file <cldf/forms.csv> in <deepadungpalaung> according to the transcription rules written at <etc/orthography.tsv>. 
@@ -61,7 +64,7 @@ Tutorial
  
  14.  The user can also indicate that a word-beginning or word-ending context should affect the transformation, using ^ and $, respectively. Consider the following example:
  
- Grampheme | IPA
+ Grapheme | IPA
  :--- | :---
  tʃ | t ʃ
  ^tʃ | tʃ
