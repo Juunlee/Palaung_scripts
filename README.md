@@ -59,7 +59,15 @@ Tutorial
  If, on the other hand, the user inputs <tʃ> in the first column and writes down <tʃ> in the second column, this sequence of two graphemes will be considered a single segment, the affricate.
  If the user writes <tʃ> in the first column and writes down <t + ʃ>, this sequence of two graphemes will be considered to always contain a syllable boundary.
  
- 14.  The user can also indicate that a word-beginning or word-ending context should affect the transformation, using ^ and $, respectively. Consider the chart in the tutorial of the paper.
+ 14.  The user can also indicate that a word-beginning or word-ending context should affect the transformation, using ^ and $, respectively. Consider the following example:
+ Grampheme | IPA
+ :--- | :---
+ tʃ | t ʃ
+ ^tʃ | tʃ
+ tʃ$ | tʃ
+ ^tʃat$ | t ʃ a t 
+ ^tʃatarem$ | t ʃ a + t a + r e m 
+ 
  <t> and <ʃ> will be considered separate segments unless <tʃ> appears in the beginning of the word or at the end of the word. However if the word is either <tʃat> or <tʃatarem>, the two graphemes will still be considered separate segments. 
  In addition, it will separate the word <tʃatarem> into three morphemes as well, which can then be compared to morphemes in words of other languages when the script is run and a partial cognate method is chosen.
  
@@ -72,8 +80,5 @@ Tutorial
  
  17. Lastly, type or paste the following command line: <cldfbench lexibank.makecldf>
  This will recreate the file <cldf/forms.csv> in <deepadungpalaung/> and when you rerun <cognate\_detection.py> and steps 6-10 again, it will create a different result.
+
  
- (4)Adapting the script to other Lexibank datasets
- 
- 18. The script can also be used to analyze any of several other datasets from Lexibank. To find such a dataset, browse <https://github.com/lexibank/><github.com/lexibank/> and change the first line of <Palaung\_scripts/cognate\_detection.py}> from <from lexibank\_deepadungpalaung import Dataset>  to e.g. <from lexibank\_chindialectsurvey import Dataset>.
- Now if users have also followed steps 3 and 4 with <deepadungpalaung> replaced by e.g. <chindialectsurvey>, it will construct a phylogenetic tree of Chin dialects.
