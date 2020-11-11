@@ -60,6 +60,7 @@ Tutorial
  If the user writes <tʃ> in the first column and writes down <t + ʃ>, this sequence of two graphemes will be considered to always contain a syllable boundary.
  
  14.  The user can also indicate that a word-beginning or word-ending context should affect the transformation, using ^ and $, respectively. Consider the following example:
+ 
  Grampheme | IPA
  :--- | :---
  tʃ | t ʃ
