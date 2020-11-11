@@ -1,6 +1,6 @@
-Tutorial 
+# Tutorial 
 
- Cloning and installing the repositories 
+## Cloning and installing the repositories 
  1. Readers should make sure to have Python 3 and git installed on the computer.
   If so, open a git-enabled Terminal window or command line.
   
@@ -28,7 +28,7 @@ Tutorial
  
  This will create a folder that includes the python files needed for automatic phylogeny.
 
- Running the scripts 
+ ## Running the scripts 
 
  6. Navigate into the Palaung\_scripts/ directory by typing the following command:`cd Palaung_scripts`
  Now type in the following command to execute the cognate detection script: `python cognate_detection.py`
@@ -52,7 +52,7 @@ Tutorial
  can then be opened in a web browser to see internal nodes decorated with the average distance between the two groups joined. 
  Note that this number would be greater than the number given by the tree display in step 8.
  
- Editing orthography.tsv and remaking the CLDF
+ ## Editing orthography.tsv and remaking the CLDF
 
  11. Type or paste the following command lines: `cldfbench catconfig` and `cldfbench lexibank.makecldf deepadungpalaung`
  This will recreate the file `cldf/forms.csv` in `deepadungpalaung` according to the transcription rules written at `etc/orthography.tsv` 
