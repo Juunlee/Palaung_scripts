@@ -8,7 +8,7 @@ This tutorial covers how to use the scripts in this repository on the dataset fo
   
  2. Even though it is not required, we strongly recommend the readers create a new Python virtual environment for the following process, as a few packages will be installed. 
  A new Python virtual environment can be created anywhere and the commands to create it in the current folder and launch it are:
- `python -m venv .` or `python3 -m venv.` followed by `source bin/activate` on Mac or Linux,
+ `python -m venv .` or `python3 -m venv .` followed by `source bin/activate` on Mac or Linux,
  `Scripts\activate` on a standard Windows command line, or `source Scripts/activate` on Windows using git bash.
  More information can be found at <https://docs.python.org/3/library/venv.html>.
  
@@ -80,10 +80,10 @@ This tutorial covers how to use the scripts in this repository on the dataset fo
     ^tʃat$ | t ʃ a t 
     ^tʃatarem$ | t ʃ a + t a + r e m 
  
-    t and ʃ will be considered separate segments unless tʃ appears in the beginning of the word or at the end of the word. However if the word is either tʃat or tʃatarem, the two graphemes will still be considered separate segments. 
-    In addition, it will separate the word tʃatarem into three morphemes as well, which can then be compared to morphemes in words of other languages when the script is run and a partial cognate method is chosen.
+  t and ʃ will be considered separate segments unless tʃ appears in the beginning of the word or at the end of the word. However if the word is either tʃat or tʃatarem, the two graphemes will still be considered separate segments. 
+  In addition, it will separate the word tʃatarem into three morphemes as well, which can then be compared to morphemes in words of other languages when the script is run and a partial cognate method is chosen.
  
- 15. In `orthography.tsv`, there are a lot of characters that look the same but have different unicode codepoints. For instance, in line 220 and 245, both instances of <ʔ> look similar but they have different unicodes; one is a Latin capital letter glottal stop and the other is Latin letter glottal stop. 
+ 15. In `orthography.tsv`, there are a lot of characters that look the same but have different unicode codepoints. For instance, in line 220 and 245, both instances of `ʔ` look similar but they have different unicodes; one is a Latin capital letter glottal stop and the other is Latin letter glottal stop. 
  If a user's changes to `orthography.tsv` have caused Unicode symbols that are not accepted phonetic symbols to remain in `cldf/forms.csv` after running `cldfbench lexibank.makecldf`, these errors will be recorded at `TRANSCRIPTION.md`in `deepadungpalaung`. Users can browse to <http://unicode.scarfboy.com/><Unicode lookup> and paste characters from `TRANSCRIPTION.md` in to make sure that they are writing the correct character in the left column of `orthography.tsv`.
  
  16. After editing `orthography.tsv`, open a git-enabled Terminal window or command line.
